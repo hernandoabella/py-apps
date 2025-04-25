@@ -201,7 +201,7 @@ Enter temperature in Celsius: 30
 
 ### Age Calculator
 Calculates your current age based on your birth year. It uses the current system year to do the math.
-```
+```python
 from datetime import datetime
 
 def age_calculator():
@@ -268,7 +268,7 @@ Time's up!
 
 ### BMI Calculator
 Calculates your Body Mass Index (BMI) using your weight and height. Based on the BMI value, it categorizes your health status (Underweight, Normal, Overweight, or Obese).
-```
+```python
 def calculate_bmi():
     print("⚖️ BMI Calculator")
 
@@ -280,15 +280,15 @@ def calculate_bmi():
         print(f"\nYour BMI is: {bmi:.2f}")
 
         if bmi < 18.5:
-            print("🟡 Category: Underweight")
+            print("Category: Underweight")
         elif 18.5 <= bmi < 25:
-            print("🟢 Category: Normal weight")
+            print("Category: Normal weight")
         elif 25 <= bmi < 30:
-            print("🟠 Category: Overweight")
+            print("Category: Overweight")
         else:
-            print("🔴 Category: Obese")
+            print("Category: Obese")
     except ValueError:
-        print("❌ Please enter valid numbers.")
+        print("Please enter valid numbers.")
 
 if __name__ == "__main__":
     calculate_bmi()
@@ -313,11 +313,11 @@ def roll_dice():
     while True:
         input("Press Enter to roll the dice...")
         dice = random.randint(1, 6)
-        print(f"🎯 You rolled a {dice}!")
+        print(f"You rolled a {dice}!")
         
         again = input("Roll again? (y/n): ").lower()
         if again != 'y':
-            print("👋 Thanks for playing!")
+            print("Thanks for playing!")
             break
 
 if __name__ == "__main__":
